@@ -24,6 +24,11 @@
 .*/Libraries/react-native/ReactNative.js
 .*/node_modules/jest-runtime/build/__tests__/.*
 
+# node_modules with flow errors
+.*/node_modules/react-native-experimental-navigation/.*
+.*/node_modules/react-static-container/.*
+.*/node_modules/findup/test/fixture/.*
+
 [include]
 
 [libs]
