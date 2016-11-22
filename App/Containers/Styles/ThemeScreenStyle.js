@@ -47,12 +47,12 @@ export default StyleSheet.create({
     width: 100,
     height: Metrics.doubleBaseMargin,
     lineHeight: Metrics.doubleBaseMargin,
-    color: Colors.charcoal,
+    color: Colors.coal,
     textAlign: 'center'
   },
   fontRow: {
     padding: Metrics.smallMargin,
     marginHorizontal: Metrics.smallMargin,
-    color: Colors.snow
+    color: Colors.coal
   }
 })

@@ -26,11 +26,11 @@ export default StyleSheet.create({
   },
   temperature: {
     ...Fonts.style.h4,
-    color: Colors.snow
+    color: Colors.coal
   },
   locale: {
     ...Fonts.style.h4,
-    color: Colors.snow
+    color: Colors.coal
   },
   groupContainer: {
     ...ApplicationStyles.groupContainer

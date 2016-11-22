@@ -15,11 +15,11 @@ const ApplicationStyles = {
       backgroundColor: Colors.transparent
     },
     backgroundImage: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0
+      flex: 1,
+      resizeMode: 'cover',
+      // remove width and height to override fixed static size
+      width: null,
+      height: null,
     },
     container: {
       flex: 1,
@@ -34,13 +34,13 @@ const ApplicationStyles = {
       borderBottomWidth: 1
     },
     sectionText: {
-      color: Colors.snow,
+      color: Colors.coal,
       marginVertical: Metrics.smallMargin,
       textAlign: 'center',
       fontWeight: 'bold'
     },
     subtitle: {
-      color: Colors.snow,
+      color: Colors.coal,
       padding: Metrics.smallMargin,
       marginBottom: Metrics.smallMargin,
       marginHorizontal: Metrics.smallMargin
@@ -52,7 +52,7 @@ const ApplicationStyles = {
   },
   darkLabel: {
     fontFamily: Fonts.type.bold,
-    color: Colors.snow
+    color: Colors.coal
   },
   groupContainer: {
     margin: Metrics.smallMargin,
@@ -67,8 +67,6 @@ const ApplicationStyles = {
     padding: Metrics.smallMargin,
     marginTop: Metrics.smallMargin,
     marginHorizontal: Metrics.baseMargin,
-    borderWidth: 1,
-    borderColor: Colors.ember,
     alignItems: 'center',
     textAlign: 'center'
   }

@@ -124,18 +124,19 @@ export default class DeviceInfoScreen extends React.Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
-        <ScrollView style={styles.container}>
-          <View style={styles.section}>
-            <Text style={styles.sectionText} >
-              Dedicated to identifying specifics of the device.  All info useful for identifying outlying behaviour specific to a device.
-            </Text>
-          </View>
-          {this.renderCard('Device Hardware', HARDWARE_DATA)}
-          {this.renderCard('Device OS', OS_DATA)}
-          {this.renderCard('App Info', APP_DATA)}
-          {this.renderCard('Net Info', this.netInfo())}
-        </ScrollView>
+        <Image source={Images.background} style={styles.backgroundImage}>
+          <ScrollView style={styles.container}>
+            <View style={styles.section}>
+              <Text style={styles.sectionText} >
+                Dedicated to identifying specifics of the device.  All info useful for identifying outlying behaviour specific to a device.
+              </Text>
+            </View>
+            {this.renderCard('Device Hardware', HARDWARE_DATA)}
+            {this.renderCard('Device OS', OS_DATA)}
+            {this.renderCard('App Info', APP_DATA)}
+            {this.renderCard('Net Info', this.netInfo())}
+          </ScrollView>
+        </Image>
       </View>
     )
   }

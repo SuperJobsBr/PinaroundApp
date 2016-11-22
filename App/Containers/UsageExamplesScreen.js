@@ -95,7 +95,7 @@ class UsageExamplesScreen extends React.Component {
             <Icon name='send' size={Metrics.icons.medium} color={Colors.error} />
           </TouchableOpacity>
           <TouchableOpacity onPress={this.handlePressStar}>
-            <Icon name='star' size={Metrics.icons.medium} color={Colors.snow} />
+            <Icon name='star' size={Metrics.icons.medium} color={Colors.coal} />
           </TouchableOpacity>
           <Icon name='trophy' size={Metrics.icons.medium} color={Colors.error} />
           <Icon name='warning' size={Metrics.icons.medium} color={Colors.ember} />
@@ -110,7 +110,7 @@ class UsageExamplesScreen extends React.Component {
           <Animatable.Text animation='fadeIn' iterationCount='infinite' direction='alternate' style={styles.subtitle}>{I18n.t('rnAnimatable')}</Animatable.Text>
           <Animatable.Image animation='pulse' iterationCount='infinite' source={Images.logo} />
           <Animatable.View animation='jello' iterationCount='infinite' >
-            <Icon name='cab' size={Metrics.icons.medium} color={Colors.snow} />
+            <Icon name='cab' size={Metrics.icons.medium} color={Colors.coal} />
           </Animatable.View>
         </View>
         {this.renderHeader(I18n.t('igniteGenerated'))}
@@ -133,16 +133,17 @@ class UsageExamplesScreen extends React.Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
-        <ScrollView style={styles.container}>
-          <View style={styles.section}>
-            <Text style={styles.sectionText} >
-              The Usage Examples screen is a playground for 3rd party libs and logic proofs.
-              Items on this screen can be composed of multiple components working in concert.  Functionality demos of libs and practices
-            </Text>
-          </View>
-          {this.renderUsageExamples()}
-        </ScrollView>
+        <Image source={Images.background} style={styles.backgroundImage}>
+          <ScrollView style={styles.container}>
+            <View style={styles.section}>
+              <Text style={styles.sectionText} >
+                The Usage Examples screen is a playground for 3rd party libs and logic proofs.
+                Items on this screen can be composed of multiple components working in concert.  Functionality demos of libs and practices
+              </Text>
+            </View>
+            {this.renderUsageExamples()}
+          </ScrollView>
+        </Image>
       </View>
     )
   }

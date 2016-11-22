@@ -7,7 +7,9 @@ export default {
     flex: 1
   },
   navBar: {
-    backgroundColor: Colors.background
+    backgroundColor: Colors.background,
+		// Hide border-bottom from navigator
+    borderBottomColor: 'transparent',
   },
   title: {
     color: Colors.snow

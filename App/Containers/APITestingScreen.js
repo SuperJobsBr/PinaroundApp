@@ -65,21 +65,22 @@ export default class APITestingScreen extends React.Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
-        <ScrollView style={styles.container} ref='container'>
+        <Image source={Images.background} style={styles.backgroundImage}>
+          <ScrollView style={styles.container} ref='container'>
 
-          <View style={styles.section}>
-            <Text style={styles.sectionText}>
-              Testing API with Postman or APIary.io verifies the server works.
-              The API Test screen is the next step; a simple in-app way to verify and debug your in-app API functions.
-            </Text>
-            <Text style={styles.sectionText}>
-              Create new endpoints in Services/Api.js then add example uses to endpoints array in Containers/APITestingScreen.js
-            </Text>
-          </View>
-          {this.renderButtons()}
-          <APIResult ref='result' />
-        </ScrollView>
+            <View style={styles.section}>
+              <Text style={styles.sectionText}>
+                Testing API with Postman or APIary.io verifies the server works.
+                The API Test screen is the next step; a simple in-app way to verify and debug your in-app API functions.
+              </Text>
+              <Text style={styles.sectionText}>
+                Create new endpoints in Services/Api.js then add example uses to endpoints array in Containers/APITestingScreen.js
+              </Text>
+            </View>
+            {this.renderButtons()}
+            <APIResult ref='result' />
+          </ScrollView>
+        </Image>
       </View>
     )
   }

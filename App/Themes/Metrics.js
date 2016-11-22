@@ -29,7 +29,11 @@ const metrics = {
     medium: 40,
     large: 60,
     logo: 300
-  }
+  },
+  mainScreen: {
+    navBarHeight: (Platform.OS === 'ios') ? 74 : 64,
+    navBarPadding: (Platform.OS === 'ios') ? 30: 20,
+  },
 }
 
 export default metrics
